@@ -10,81 +10,84 @@ body {
 h1 {
   margin-bottom: 15px;
   font-size: 175%;
-  text-align: center;
+  text-align: left;
 }
 
-
-/********** Mobile View **********/
-.row {
-  width: 100%;
-}
-
-/********** Mobile View **********/
-@media (max-width: 767px) {
-  .col{
-    float: left;
-    width: 100%;
-  }
-}
-
-
-
-/********** Tablet View **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col{
-    float: left;
-    width: 50%;
-  }
-  #p3{
-  	width: 100%;
-  }
-}
-
-/********** Desktop View **********/
-@media (min-width: 992px) {
-  .col{
-    float: left;
-    width: 33.33%;
-  } 
-}
 
 .container {
   border: 1px solid black;
   background-color: #D3D3D3;
-  margin: 15px;
+  margin: 0px;
   padding: 15px;
+  padding-bottom: 0px;
   position: relative;
-
+  width: 100%
 }
 
-.content {
-	position: relative;
-	top: 10px;
+.navbar-brand h1 { /* Restaurant name */
+  color: #000000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
 
-.title{
-	font-size: 125%;
-	width: 100px;
-	text-align: center;
-	position: absolute;
-  	top: 0;
- 	right: 0;
- 	margin: 0px;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
-#section_title1{
-	background-color: #FF0000;
-	color: white;
-	
+.navbar-toggle, .collapsed {
+ background-color: #000000;
 }
 
-#section_title2{
-	background-color: #00FF00;
-	
+.navbar-toggle .icon-bar {
+ background-color: #FFFFFF;
 }
 
-#section_title3{
-	background-color: #0000FF;
-	color: white;
-	
+
+#nav-list {
+  margin-top: 10px;
+  background-color: #000080;
+  margin-bottom: 0px;
+}
+#nav-list a {
+  color: #FFFFFF;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #808000;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#main-content{
+  border: none;
+  background-color: #FFFFFF;
+  width: 100%
+}
+
+.col-xs-12{
+  border: 1px solid black;
+  background-color: #00FFFF;
+  margin: 0px auto 15px;
+  padding: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  width: 100%
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #800000;
+}
+
+.col-xs-12>span{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
 }
